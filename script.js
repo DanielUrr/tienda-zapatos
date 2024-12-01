@@ -1,9 +1,8 @@
 const API_URL = "https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev";
- // Reemplaza con tu URL de backend
 
+// Registro
 document.getElementById("registerForm").addEventListener("submit", async function (e) {
-  e.preventDefault(); // Evita que el formulario recargue la página
-
+  e.preventDefault();
   const email = document.getElementById("newEmail").value;
   const password = document.getElementById("newPassword").value;
 
@@ -29,10 +28,9 @@ document.getElementById("registerForm").addEventListener("submit", async functio
   }
 });
 
-// Inicio de sesión
+// Inicio de Sesión
 document.getElementById("loginForm").addEventListener("submit", async function (e) {
-  e.preventDefault(); // Evita que el formulario recargue la página
-
+  e.preventDefault();
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
@@ -47,13 +45,13 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
     if (response.ok) {
       alert("Inicio de sesión exitoso. Bienvenido/a!");
-      window.location.href = "index.html"; // Redirige a la página principal
+      window.location.href = "index.html";
     } else {
       const error = await response.json();
       alert(error.error);
     }
   } catch (err) {
-    console.error("Error en el inicio de sesión:", err);
+    console.error("Error al iniciar sesión:", err);
     alert("Hubo un problema al iniciar sesión.");
   }
 });
