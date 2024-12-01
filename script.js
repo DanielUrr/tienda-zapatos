@@ -7,7 +7,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
   const password = document.getElementById("newPassword").value;
 
   try {
-    const response = await fetch(`${API_URL}/register`, {
+    const response = await fetch(`https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev/login/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
   const password = document.getElementById("password").value;
 
   try {
-    const response = await fetch(`${API_URL}/login`, {
+    const response = await fetch(`https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev/login/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,4 +55,6 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     alert("Hubo un problema al iniciar sesión.");
   }
 });
+
+
 
