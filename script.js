@@ -1,4 +1,4 @@
-const API_URL = "https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev/";
+const API_URL = "https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev";
 
 // Registro
 document.getElementById("registerForm").addEventListener("submit", async function (e) {
@@ -49,3 +49,4 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     console.error("Error en el inicio de sesión:", err);
   }
 });
+
