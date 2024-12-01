@@ -1,4 +1,5 @@
-const API_URL = "https://https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev/.repl.co"; // Reemplaza con tu URL de backend
+const API_URL = "https://678bbbaf-562e-4a71-8fe7-f21a652d3d91-00-yi0lkmdntppj.spock.replit.dev";
+ // Reemplaza con tu URL de backend
 
 document.getElementById("registerForm").addEventListener("submit", async function (e) {
   e.preventDefault(); // Evita que el formulario recargue la página
