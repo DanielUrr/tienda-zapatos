@@ -1,78 +1,4 @@
-/* Estilo del contenedor de login */
-.login-container {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.login-container h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-.login-container label {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  display: block;
-  color: #555;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #ff4c4c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.login-container button:hover {
-  background-color: #e43f3f;
-}
-
-.register-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.register-container h2 {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.register-container .btn-register {
-  display: inline-block;
-  background-color: #ff4c4c;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.register-container .btn-register:hover {
-  background-color: #e43f3f;
-}
-
-/* Header (estilo adicional para el login) */
+/* Header */
 .header-top {
   background-color: #ff4c4c;
   color: white;
@@ -113,4 +39,123 @@
 
 .header-main nav a:hover {
   color: #ff4c4c;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.user-actions a {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.user-actions a:hover {
+  color: #ff4c4c;
+}
+
+/* Categorías */
+.categories {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.categories h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.category-grid {
+  display: flex; /* Cambia de grid a flexbox */
+  flex-wrap: nowrap; /* Evita que los elementos bajen */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre elementos */
+  overflow-x: auto; /* Permite desplazamiento horizontal si hay muchos elementos */
+  padding: 10px;
+}
+
+.category-item {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 120px; /* Asegura un tamaño mínimo para los elementos */
+}
+
+.category-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.category-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Ofertas */
+.featured {
+  margin: 20px;
+}
+
+.featured h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.featured-carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
 }
