@@ -5,42 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Zapatos</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Encabezado -->
   <header>
     <div class="logo">Tienda de Zapatos</div>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="contacto.html">Contacto</a>
-      <a href="login.html">Iniciar Sesión</a> <!-- Enlace agregado aquí -->
+      <a href="login.html">Iniciar Sesión</a>
     </nav>
   </header>
+
+  <!-- Carrusel -->
   <main>
-    <h1>Catálogo de Zapatos</h1>
-    <div class="product-grid">
-      <!-- Producto 1 -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Zapato 1">
-        <h3>Zapato Deportivo</h3>
-        <p>$50,000</p>
-        <a href="detalle.html" class="btn">Ver más</a>
-      </div>
-      <!-- Producto 2 -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Zapato 2">
-        <h3>Zapato Casual</h3>
-        <p>$60,000</p>
-        <a href="detalle.html" class="btn">Ver más</a>
-      </div>
-      <!-- Producto 3 -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Zapato 3">
-        <h3>Zapato Elegante</h3>
-        <p>$80,000</p>
-        <a href="detalle.html" class="btn">Ver más</a>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="zapatos1.jpg" alt="Zapato Deportivo">
+        <img src="zapatos2.jpg" alt="Zapato Casual">
+        <img src="zapatos3.jpg" alt="Zapato Elegante">
       </div>
     </div>
+
+    <!-- Catálogo de productos -->
+    <section class="catalogo">
+      <h1>Catálogo de Zapatos</h1>
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300" alt="Zapato Deportivo">
+          <h3>Zapato Deportivo</h3>
+          <p>$50,000</p>
+          <a href="detalle.html" class="btn">Ver más</a>
+        </div>
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300" alt="Zapato Casual">
+          <h3>Zapato Casual</h3>
+          <p>$60,000</p>
+          <a href="detalle.html" class="btn">Ver más</a>
+        </div>
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300" alt="Zapato Elegante">
+          <h3>Zapato Elegante</h3>
+          <p>$80,000</p>
+          <a href="detalle.html" class="btn">Ver más</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2024 Tienda de Zapatos. Todos los derechos reservados.</p>
   </footer>
